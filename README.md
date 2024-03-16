@@ -32,4 +32,4 @@ This project is Developer by Bhensadadiya Jeel.
 
 ## Contact
 
-(mailto:jeel.official.24@gmail.com)
+For any inquiries or feedback, please contact us at [example@example.com](mailto:jeel.official.24@gmail.com).
