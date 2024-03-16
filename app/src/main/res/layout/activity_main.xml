@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <ImageView
+        android:id="@+id/networkError"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_margin="6dp"
+        android:contentDescription="@string/chat_from_bot_side"
+        android:src="@drawable/network"
+        android:visibility="gone" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_gravity="center"
+        android:id="@+id/gifBackground"
+        android:layout_width="match_parent"
+        android:src="@drawable/background"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorSecondaryContainer">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:menu="@menu/navigation_drawer"
+            app:title="@string/app_name" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/bannerAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="0dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="76dp"
+        android:padding="10dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="8dp"
+        android:hint="@string/ask_question">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeActionId="10"
+            android:imeOptions="actionSend"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_margin="10dp"
+        android:layout_gravity="bottom|end"
+        android:drawableEnd="@drawable/send"
+        style="?attr/materialIconButtonStyle"
+        android:id="@+id/iconButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

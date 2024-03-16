@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">QnA Chat</string>
+    <string name="qna_logo">QnA Logo</string>
+    <string name="do_you_have_any_question">Do you have any question?</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="sign_up_with_google">Sign up with Google</string>
+    <string name="please_wait">Please Wait..</string>
+    <string name="ask_question">Ask Question</string>
+    <string name="chat_from_bot_side">Chat From Bot Side</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="logout">Logout</string>
+
+    <string name="version">VERSION 1.4</string>
+    <string name="share_app">Share App</string>
+    <string name="qna_chat_app_welcome_wallpaper">QnA chat App Welcome Wallpaper</string>
+    <string name="tagline">Get answers to your questions, anytime, anywhere with our QnA chat app!</string>
+</resources>
