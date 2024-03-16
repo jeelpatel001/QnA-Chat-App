@@ -50,8 +50,9 @@ class MainActivity : AppCompatActivity() {
     private var gsc: GoogleSignInClient? = null
     private var interstitialAdHelper: InterstitialAdHelper? = null
     private var bannerAdHelper: BannerAdHelper? = null
-    private val AD_UNIT_ID_interstitial = "ca-app-pub-6349327669214019/7497955645"
-    private val AD_UNIT_ID_banner = "ca-app-pub-6349327669214019/7713578069"
+
+    private val AD_UNIT_ID_interstitial = "xxxxxxxxxxxx" // Add your interstitial add id
+    private val AD_UNIT_ID_banner = "xxxxxxxxxxxx" // Add your banner add id
 
 
     @SuppressLint("NotifyDataSetChanged")
@@ -213,7 +214,7 @@ class MainActivity : AppCompatActivity() {
                 val params: MutableMap<String, String> = HashMap()
                 params["Content-Type"] = "application/json"
                 params["Authorization"] =
-                    "Bearer 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"
+                    "xxxxxxxxxxxxxxxxxx"  // add your api key from OpenAi
                 return params
             }
         }
