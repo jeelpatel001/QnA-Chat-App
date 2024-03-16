@@ -214,7 +214,7 @@ class MainActivity : AppCompatActivity() {
                 val params: MutableMap<String, String> = HashMap()
                 params["Content-Type"] = "application/json"
                 params["Authorization"] =
-                    "xxxxxxxxxxxxxxxxxx"  // add your api key from OpenAi
+                    "xxxxxxxxxxxxxxxxx"  // add your api key from OpenAi
                 return params
             }
         }
